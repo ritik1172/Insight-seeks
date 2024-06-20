@@ -1,0 +1,310 @@
+.right-sidebar-home {
+  width: 35vh;
+  height: 81.5vh; /* Set the sidebar height to 100% of the viewport height */
+  padding: 20px;
+  background-color: #F0F0F0;
+  position: fixed; /* Set the sidebar to a fixed position */
+  top: 12%; /* Stick to the top of the viewport */
+  left: 80%; /* Stick to the left of the viewport */
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vh;
+}
+.environments{
+  background-color: grey;
+  color: white;
+  opacity: 0.8;
+  padding-top: 1vh;
+  padding-bottom: 1.2vh;
+  padding-left: 11vh;
+  cursor: pointer;
+  transition: transform .2s;
+}
+.environments:hover{
+  transform: scale(0.9);
+}
+.container-home.modal-open{
+  opacity: 0.1;
+}
+
+button:hover{
+  transform: scale(1.2);
+}
+
+.env{
+  height: 6vh;
+  display: flex;
+  transition: transform .2s;
+}
+.env:hover{
+  background-color: rgb(216, 215, 215);
+  transition: transform .2s;
+}
+.g_name{
+  margin-left: 2vh;
+  margin-top: 1vh;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.Familygroupimg{
+  height: 76%;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 1vh;
+  margin-top: 1vh;
+}
+.envCreate{
+   background-color: grey; 
+   opacity: 0.8;
+   padding-top: 1vh;
+   padding-bottom: 1.2vh;
+   padding-left: 4vh;
+   color: white;
+   cursor: pointer;
+   transition: transform .2s;
+}
+.envCreate:hover{
+  transform: scale(0.9);
+}
+.container-home {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Larger column takes 2/3, smaller takes 1/3 */
+    grid-gap: 20px;
+    position: relative;
+  }
+
+
+  .left-sidebar-home{
+    width: 39vh;
+    height: 81.5vh; /* Set the sidebar height to 100% of the viewport height */
+    padding: 20px;
+    background-color: #F0F0F0;
+    position: fixed; /* Set the sidebar to a fixed position */
+    top: 12%;
+    left: 0.2%;
+  }
+  
+  .main-content-home {
+    width: 90vh;
+    overflow-y: auto;
+    margin-top: 70px;
+    margin-right: 350px;
+    margin-left: 55vh;
+    background-color: none;
+    border: none;
+  }
+  /* Hide the scrollbar for WebKit-based browsers */
+.main-content-home::-webkit-scrollbar {
+  width: 0; /* Set the width to 0 to hide the scrollbar */
+  height: 0; /* Set the height to 0 to hide the scrollbar (for horizontal scrollbar) */
+}
+/* For Firefox */
+.main-content-home {
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+/* Optional: Handle mouse interaction for WebKit-based browsers */
+.main-content-home:hover::-webkit-scrollbar {
+  width: auto; /* Set the width to auto on hover to show the scrollbar */
+  height: auto; /* Set the height to auto on hover to show the scrollbar (for horizontal scrollbar) */
+}
+  .post-home {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color:whitesmoke;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 0;
+    border: none;
+  }
+
+  .post-header-home {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .person-image-home {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: -1vh;
+    margin-top: -2vh;
+  }
+  
+  .post-info-home {
+    margin-top: -4vh;
+    /* position: relative; */
+  }
+  
+  .home-posted-by{
+    font-size: 12px;
+    margin-top: -2vh;
+    font-family: 'Lacquer';
+
+  }
+  .post-image-home { 
+    max-height: 70vh;
+    width: 70vh;
+    /* max-width: 71vh; */
+    margin-left: 4.2vh;
+    margin-bottom: 10px;
+    background-color: grey;
+  }
+  .like-and-count{
+    /* margin-right: 40vh; */
+    color: #8CD6B1;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    margin-top: 0vh;
+    margin-left: 90vh;
+    display: inline-block;
+    /* background-color: #010101; */
+  }
+  .counting-like{
+    color: #010101;
+    font-weight: normal;
+    font-size: 15px;
+  } 
+  .like-button {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .like-button.liked {
+    animation: shake 0.5s ease-in-out;
+  }
+ 
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(5px);
+    }
+  }
+  
+  .read-more {
+    width: 20vh;
+    color: #456052;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform .2s;
+  }
+
+  button:hover{
+    transform: scale(1.2);
+  }
+
+  .btn-sidebar-home{
+    position: fixed;
+    top: 90%;
+    left: 84%;
+  }
+
+  .interest-home{
+    padding-left: 40px;
+    color: rgb(21, 20, 20);
+  }
+
+  .selected-interests-home {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .remove-icon-home {
+    cursor: pointer;
+    color: red;
+    margin-left: 5px;
+  }
+  
+  .remove-icon-home:hover {
+    color: darkred;
+  }
+  
+  .bottom-options{
+    display: flex;
+    flex-direction: row;
+    gap:2vh;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    z-index: 10;
+    margin-bottom: -4.6vh;    
+  }
+  .bottom{
+    height: 7vh;
+    width: 8vh;
+  }
+
+  #comment-on-post{
+    color: #456052;
+    font-size: 20px;
+    margin-top: 1.6vh;
+    margin-left: 2.4vh;
+  }
+  @media (max-width: 480px) {
+    .left-sidebar-home{
+      display: none;
+    }
+    .like-and-count{
+      margin-left: 33vh
+    }
+    .left-sidebar-home{
+      display: none;
+    }
+    .main-content-home {
+      width:44.4vh;
+      padding: 6px;
+      /* margin-right: 1px; */
+      overflow-x: hidden;
+      margin-left: 6px;
+    }
+
+    .right-sidebar-home {
+      display: none;
+    }
+    .post-home{
+      width: 40vh;
+      /* border: 1px solid #ccc; */
+      padding-right: 10px;
+      padding-right: 10px;
+      padding-left: 18px;
+      padding-top: 2px;
+    }
+    .post-header-home{
+      margin-top: -5px;
+    }
+    .person-image-home{
+      margin-bottom: 22px;
+      margin-left: -10px;
+    }
+    .post-image-home{
+      margin-left: -4px;
+    }
+    .home-posted-by{
+      margin-left: 0;
+      font-size: small;
+      margin-top: -8px;
+      margin-left: -18px;
+    }
+  }
+
+  /* @media (max-width: 600px) {
+    .left-sidebar-home{
+      display: none;
+    }
+    .main-content-home {
+      width: 115%;
+      margin-left: 6px;   
+    }
+  } */

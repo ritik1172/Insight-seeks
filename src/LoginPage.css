@@ -1,0 +1,130 @@
+:root {
+    --primary-color: rgba(162, 205, 176, 1);
+    --background: rgba(137, 133, 133, 1);
+    --color: #fcfcf5;
+}
+
+.header {
+    font-family: 'Lacquer';
+    /* font-family: 'Lumanosimo', cursive; */
+
+}
+
+.login {
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-email-pass-wrong{
+    padding-top: 2.1vh;
+    padding-left: 74vh;
+    height: 6vh;
+    font-weight: 700;
+    color: #516759;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.brand-container {
+    background: var(--primary-color);
+    flex: 45%;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background: var(--color);
+    flex: 55%;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input,
+.form-container button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-container input {
+    background-color: #f2f2f2;
+}
+
+.form-container button {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.google-auth {
+    /* Add styles for the google-auth anchor */
+    display: block;
+    /* Make the anchor a block-level element */
+    margin-top: 20px;
+    /* Add some spacing between the form and the anchor */
+    text-align: center;
+    /* Center the image horizontally */
+}
+
+.google-auth img {
+    /* Add styles for the image inside the google-auth anchor */
+    width: 200px;
+    /* Set the desired width of the image */
+    height: auto;
+    /* Automatically adjust the height to maintain aspect ratio */
+}
+.redirect-signin{
+    cursor: pointer;
+}
+.i{
+    margin-left: 10px;
+}
+@media screen and (max-width: 480px) {
+
+    .container {
+        flex-direction: column;
+        width: 95%;
+        height: 80%;
+        margin-bottom: 8vh;
+    }
+
+    .form-container {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .brand-container {
+        border-radius: 10px 10px 0 0;
+        margin-top: auto;
+    }
+}
